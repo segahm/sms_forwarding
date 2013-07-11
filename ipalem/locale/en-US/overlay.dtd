@@ -1,0 +1,10 @@
+<!ENTITY message "Message:">
+<!ENTITY yournumber "From:">
+<!ENTITY sendbtn.value "Send SMS">
+<!ENTITY sendto "Send SMS To:">
+<!ENTITY msgsent "Message Sent!">
+<!ENTITY mainMenu "Main Menu">
+<!ENTITY resize "Resize elements">
+<!ENTITY sendbtn.popup "Click here to send SMS to a phone">
+<!ENTITY toolbarbutton.tooltip "Click here to send SMS to a phone">
+<!ENTITY toolbarbutton.label "iPalem SMS">

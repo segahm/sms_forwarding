@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://ismsend/locale/overlay.dtd">
+<?xml-stylesheet href="chrome://ismsend/skin/" type="text/css"?>
+<overlay id="ismsendOverlay" xmlns:html="http://www.w3.org/1999/xhtml"
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+xmlns:xlink="http://www.w3.org/1999/xlink">
+<!--  toolbar button  -->
+<toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="ismsend-button" class="toolbarbutton-1"
+    label="&toolbarbutton.label;" tooltiptext="&toolbarbutton.tooltip;"
+    oncommand="IPALEM_toggle();"/>
+</toolbarpalette>
+<script type="application/x-javascript" src="chrome://ismsend/content/overlay.js" />
+<toolbox id="navigator-toolbox">
+    <toolbar id="IPALEM_TB" accesskey="S" class="chromeclass-toolbar"
+             context="toolbar-context-menu" toolbarname="iPalem SMS Toolbar"
+             hidden="false" persist="hidden"><toolbaritem persist="width" align="center">
+
+		<label control="IPALEM_tonum" class="tb_text" value="&sendto;" />
+		<menulist id="IPALEM_menu" editable="true" width="200" flex="1" persist="width">
+			<menupopup id="IPALEM_menupopup">
+			</menupopup>
+		</menulist>
+	</toolbaritem>      
+
+	<splitter id="IPALEM_ResizeSplitter4" state="open" collapse="none"
+                  resizebefore="closest" resizeafter="farthest"
+                  tooltiptext="&resize;" persist="ordinal"/>
+
+	<toolbaritem persist="width" align="center">
+
+		<label control="IPALEM_yourNumber" class="tb_text" value="&yournumber;"/>
+    		<textbox id="IPALEM_yourNumber" editable="true"
+                      width="100" maxlength="15"/>
+
+	</toolbaritem>
+
+	<toolbarseparator id="IPALEM-TB-Sep3" />
+
+	<toolbaritem align="center" persist="width">
+
+		<label control="IPALEM_msg" class="tb_text" value="&message;"/>
+    		<textbox id="IPALEM_fullMessage" editable="true" flex="1" 
+    			minwidth="100" width="450" maxlength="160" persist="width"/>
+
+	</toolbaritem>
+
+	<splitter id="IPALEM_ResizeSplitter2" state="open" collapse="none"
+                  resizebefore="closest" resizeafter="farthest"
+                  tooltiptext="&resize;" persist="ordinal"/>
+       
+		<toolbarbutton align="center" id="IPALEM_SENDBUTTON" tooltiptext="&sendbtn.popup;" collapsed="false"
+						oncommand="IPALEM_SendSMS();" class="tb_text" label="&sendbtn.value;"/>
+		<toolbarspring />
+		<toolbaritem valign="middle">
+		<html:table><html:tr id="IPALEM_rightText"><html:td id="IPALEM_status">sent...</html:td>
+		<html:td>
+		<html:a href="http://www.ipalem.com" id="siteLink">www.iPalEm.com</html:a></html:td></html:tr></html:table></toolbaritem>
+    </toolbar>
+</toolbox>
+</overlay>

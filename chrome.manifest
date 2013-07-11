@@ -1,0 +1,6 @@
+content ismsend content/
+locale ismsend en-US locale/en-US/
+overlay chrome://browser/content/browser.xul chrome://ismsend/content/overlay.xul
+skin ismsend classic/1.0 skin/classic/
+style chrome://browser/content/browser.xul chrome://ismsend/skin/
+style chrome://global/content/customizeToolbar.xul chrome://ismsend/skin/

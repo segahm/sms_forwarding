@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{32f7876f-72c1-4e02-a1ab-e4c2df7f1ad1}</em:id>
+    <em:version>0.3</em:version>
+    
+    <!-- Target Application this extension can install into, 
+        with minimum and maximum supported versions. -->
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>1.5+</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+    <!-- Front End MetaData -->
+    <em:name>ismsend</em:name>
+    <em:description>Send SMS messages for free using iPalEm.com.</em:description>
+    <em:creator>Sergey Mirkin</em:creator>
+    <em:homepageURL>http://www.ipalem.com/</em:homepageURL>
+    
+    <!-- Packages, Skins and Locales that this extension registers -->
+    <em:file>
+      <Description about="urn:mozilla:extension:file:ipalem.jar">
+        <em:package>/</em:package>
+      </Description>
+    </em:file>
+  </Description>
+</RDF>

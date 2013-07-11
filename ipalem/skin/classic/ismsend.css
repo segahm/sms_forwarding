@@ -1,0 +1,41 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is the iPalem extension for Mozilla Firefox.
+ *
+ * The Initial Developer of the Original Code is 
+ * Sergey Mirkin <info@ipalem.com>
+ * Portions created by the Initial Developer are Copyright (C) 2005
+ * the Initial Developer. All Rights Reserved.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+#ismsend-button {
+  list-style-image: url("chrome://ismsend/skin/ismsend24.png");
+  /*-moz-image-region: rect(0px 24px 24px 0px);*/
+}
+
+toolbar[iconsize="small"] #ismsend-button {
+  list-style-image: url("chrome://ismsend/skin/ismsend16.png");
+  /*-moz-image-region: rect(0px 16px 16px 0px);*/
+}
+#siteLink{
+	color:#B5B7CF;text-decoration:underline;padding-left:20px;
+}
+.tb_text{
+	color:#080C3F
+}
+#IPALEM_status{
+	color:#ffffff;background-color:#BF4747;border-width:1px;border-color:#000000;border-style:solid;padding:5px;
+	padding-top:1px;padding-bottom:1px;font-size:14px;display:none
+}
